@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: gaming;
+  src: url(resources/Gameplay.ttf);
+}
+
+body {
+  font-family: gaming;
+  background-color: #e7e0d3;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
+
+  max-width: max-content;
+  background: linear-gradient(
+    90deg,
+    #4cd964,
+    #5ac8fa,
+    #007aff,
+    #34aadc,
+    #5856d6,
+    #ff2d55
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+  gap: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.navigation li {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.navigation li a:link,
+.navigation li a:visited {
+  text-decoration: none;
+  color: #4cd964;
+}
+
+.navigation li a:hover {
+  text-decoration: underline;
+  color: #ff2d55;
+}
+
+.navigation li a:active {
+  color: #4ca700;
+}
+
+.mission {
+  background-image: url(resources/images/banner-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 6.5rem;
+}
+
+.mission .mission-text {
+  background-color: #fff;
+  width: 100%;
+
+  padding: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+
+p {
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.library {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+
+.library-text {
+  margin-bottom: 1rem;
+}
+
+.library-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gallery-item img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 12.5rem;
+  padding: 0.625rem;
+  height: auto;
+}
+
+.gallery-item span {
+  padding: 0.3125rem;
+  min-width: 15rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.team {
+  background-image: url(resources/images/employees/team-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 270px;
+  padding: 0.5rem;
+
+  margin-bottom: 5rem;
+}
+
+.team-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-shrink: 1;
+
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.team-member img {
+  width: 8rem;
+  height: auto;
+}
+
+.team-member h3 {
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.team-member span {
+  color: #fff;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+footer h2,
+footer h4 {
+  margin-bottom: 1.5rem;
+  font-weight: lighter;
+}
+
+footer h3 {
+  margin-top: 3rem;
+  font-size: 0.75rem;
+  text-align: left;
+}
